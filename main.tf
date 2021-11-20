@@ -12,9 +12,9 @@ variable "profile" {
   description = "enter the aws profile name"
 }
 
-variable "verioning_enabled" {
+variable "versioning_enabled" {
   type        = bool
-  description = "do you want to enable verioning ? (true/false)"
+  description = "do you want to enable versioning ? (true/false)"
 
   validation {
     condition     = contains(["true", "false"], var.verioning_enabled)
@@ -41,6 +41,6 @@ module "storage" {
   source          = "./storage"
   product         = local.product
   application_tag = local.application_tag
-  versioning      = var.verioning_enabled
+  versioning      = var.versioning_enabled
   log_intervel    = var.log_intervel
 }
