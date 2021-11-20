@@ -28,5 +28,5 @@ you need to add the required values to create a new rule in lifecycle_rules vari
 | Name | Description | Type | Options | Required |
 |------|-------------|------|---------|:--------:|
 | log Intervel | (Required) The time intervel for storing log the reports  | `string` | `Hourly, Daily, Weekly` | yes |
-| Profile | (Required) The name of the aws profile` | `string` | `Null` | yes |
+| Profile | (Required) The name of the aws profile | `string` | `Null` | yes |
 | versioning_enabled | (Required)  Enable versioning. Once you version-enable a bucket, it can never return to an unversioned state. You can, however, suspend versioning on that bucket. | `bool` | `false, true` | yes |
